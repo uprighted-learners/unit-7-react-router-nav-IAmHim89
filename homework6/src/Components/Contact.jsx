@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-dom';
-const Contact = () => {
+import { Link } from 'react-router-dom';
+function Contact(){
   return (
     <>
       <div style={{display: "flex", flexDirection: "col" }}>
@@ -25,9 +25,12 @@ const Contact = () => {
           </form>    
         </div>
       </div>
-        <nav>
-          <li><Link to="/" >Home</Link></li>
-        </nav>
+      <div>
+        <button>
+          <Link to="/">Home</Link>
+        </button>        
+      </div>
+        
     </>
   )
 }
